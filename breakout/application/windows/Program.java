@@ -20,6 +20,6 @@ public final class Program
      */
     public static void main(String[] args)
     {
-        new Game(new BundleResourceProvider()).start();
+        new Game(new BundleResourceProvider("breakout.application.Resources")).start();
     }
 }
