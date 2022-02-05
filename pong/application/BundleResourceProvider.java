@@ -10,13 +10,14 @@ import java.util.ResourceBundle;
  */
 public class BundleResourceProvider extends ResourceProvider
 {
-    private final ResourceBundle _resourceBundle = ResourceBundle.getBundle("breakout.application.Resources");
+    private final ResourceBundle _resourceBundle;
 
     /**
      * Initializes a new instance of the {@link BundleResourceProvider} class.
      */
-    public BundleResourceProvider()
+    public BundleResourceProvider(String name)
     {
+        this._resourceBundle = ResourceBundle.getBundle(name);
     }
 
     /** {@inheritDoc} */
